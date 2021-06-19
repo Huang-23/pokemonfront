@@ -45,19 +45,17 @@ export class Services extends Component{
       let editModalClose=()=>this.setState({editModalShow:false});
       return(
           <div >
-              <h1>留言板</h1>
+              <h1>已被捕獲的寶可夢</h1>
               <Table className="mt-4" striped bordered hover size="sm">
                   <thead>
                       <tr>
-                        <th>順序</th>
-                        <th>寶可夢類別</th>
-                        <th>修改資料</th>
+                        <th>寶可夢名稱</th>
+                        <th>修改或刪除</th>
                       </tr>
                   </thead>
                     <tbody>
                       {deps.map(dep=>
                         <tr key={dep.DepartmentId}>
-                              <td>{dep.DepartmentId}</td>
                               <td>{dep.DepartmentName}</td>
                               <td>
                                <ButtonToolbar>
@@ -80,7 +78,7 @@ export class Services extends Component{
               <ButtonToolbar>
                   <Button variant='primary' 
                   onClick={()=>this.setState({addModalShow:true})}>
-                  Add Department</Button>
+                  Add Pokemon</Button>
 
                   <AddDepModal show={this.state.addModalShow}
                   onHide={addModalClose}/>

@@ -7,8 +7,13 @@ import {Services} from './components/Services';
 import {Products} from './components/Products';
 import SignUp from './components/SignUp';
 import Game from './components/Game';
+import ReactGA from 'react-ga';
 
 function App() {
+
+  ReactGA.initialize('G-Z5XE21NL35');
+  ReactGA.pageview('/');
+
   return (
     <>
       <Router>

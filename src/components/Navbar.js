@@ -42,12 +42,12 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link to='/department' className='nav-links' onClick={closeMobileMenu}>
-                Type
+                Pokemon
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/employee' className='nav-links' onClick={closeMobileMenu}>
-                Post
+                Record
               </Link>
             </li>
             <li>

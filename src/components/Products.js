@@ -97,7 +97,7 @@ export class Products extends Component{
                 <ButtonToolbar>
                     <Button variant='primary'
                     onClick={()=>this.setState({addModalShow:true})}>
-                    Add Employee</Button>
+                    Add A Record</Button>
 
                     <AddEmpModal show={this.state.addModalShow}
                     onHide={addModalClose}/>

@@ -40,7 +40,7 @@ centered
 >
     <Modal.Header clooseButton>
         <Modal.Title id="contained-modal-title-vcenter">
-            Add Department
+            Add Pokemon
         </Modal.Title>
     </Modal.Header>
     <Modal.Body>
@@ -49,14 +49,14 @@ centered
             <Col sm={6}>
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Group controlId="DepartmentName">
-                        <Form.Label>DepartmentName</Form.Label>
-                        <Form.Control type="text" name="DepartmentName" required 
-                        placeholder="DepartmentName"/>
+                        <Form.Label>Pokemon Name</Form.Label>
+                        <Form.Control type="text" name="EnterPokemonName" required 
+                        placeholder="EnterPokemonName"/>
                     </Form.Group>
 
                     <Form.Group>
                         <Button variant="primary" type="submit">
-                            Add Department
+                            Add
                         </Button>
                     </Form.Group>
                 </Form>

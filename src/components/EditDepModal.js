@@ -40,7 +40,7 @@ centered
 >
     <Modal.Header clooseButton>
         <Modal.Title id="contained-modal-title-vcenter">
-            Edit Department
+            Edit Pokemon
         </Modal.Title>
     </Modal.Header>
     <Modal.Body>
@@ -48,16 +48,15 @@ centered
         <Row>
             <Col sm={6}>
                 <Form onSubmit={this.handleSubmit}>
-                <Form.Group controlId="DepartmentId">
-                        <Form.Label>DepartmentId</Form.Label>
+                    <Form.Group controlId="DepartmentId">
+                        <Form.Label>Id</Form.Label>
                         <Form.Control type="text" name="DepartmentId" required
                         disabled
                         defaultValue={this.props.depid} 
                         placeholder="DepartmentName"/>
                     </Form.Group>
-
                     <Form.Group controlId="DepartmentName">
-                        <Form.Label>DepartmentName</Form.Label>
+                        <Form.Label>Pokemon Name</Form.Label>
                         <Form.Control type="text" name="DepartmentName" required 
                         defaultValue={this.props.depname}
                         placeholder="DepartmentName"/>
@@ -65,7 +64,7 @@ centered
 
                     <Form.Group>
                         <Button variant="primary" type="submit">
-                            Update Department
+                            Update
                         </Button>
                     </Form.Group>
                 </Form>

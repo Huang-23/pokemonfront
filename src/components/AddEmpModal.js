@@ -83,7 +83,7 @@ centered
 >
     <Modal.Header clooseButton>
         <Modal.Title id="contained-modal-title-vcenter">
-            Add Employee
+            Add A Record
         </Modal.Title>
     </Modal.Header>
     <Modal.Body>
@@ -92,13 +92,13 @@ centered
             <Col sm={6}>
                 <Form onSubmit={this.handleSubmit}>
                     <Form.Group controlId="EmployeeName">
-                        <Form.Label>EmployeeName</Form.Label>
-                        <Form.Control type="text" name="EmployeeName" required 
-                        placeholder="EmployeeName"/>
+                        <Form.Label>Master Name</Form.Label>
+                        <Form.Control type="text" name="EnterMasterName" required 
+                        placeholder="EnterMasterName"/>
                     </Form.Group>
 
                     <Form.Group controlId="Department">
-                        <Form.Label>Department</Form.Label>
+                        <Form.Label>Pokemon Name</Form.Label>
                         <Form.Control as="select">
                         {this.state.deps.map(dep=>
                             <option key={dep.DepartmentId}>{dep.DepartmentName}</option>)}
@@ -106,7 +106,7 @@ centered
                     </Form.Group>
 
                     <Form.Group controlId="DateOfJoining">
-                        <Form.Label>DateOfJoining</Form.Label>
+                        <Form.Label>Date of Captured</Form.Label>
                         <Form.Control 
                         type="date"
                         name="DateOfJoining"
@@ -119,7 +119,7 @@ centered
 
                     <Form.Group>
                         <Button variant="primary" type="submit">
-                            Add Employee
+                            Add
                         </Button>
                     </Form.Group>
                 </Form>
