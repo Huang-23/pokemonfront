@@ -7,8 +7,7 @@ import ReactGA from 'react-ga';
 
 function Home() {
 
-  ReactGA.initialize('G-HCXMLPP4LE');
-  ReactGA.pageview('/');
+
 
   return (
     <>
