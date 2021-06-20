@@ -7,12 +7,20 @@ import {Services} from './components/Services';
 import {Products} from './components/Products';
 import SignUp from './components/SignUp';
 import Game from './components/Game';
+import {useEffect} from 'react';
 import ReactGA from 'react-ga';
 
 function App() {
 
-  ReactGA.initialize('G-Z5XE21NL35');
-  ReactGA.pageview('/');
+  useEffect(() => {
+    ReactGA.initialize('G-Z5XE21NL35');
+    // To Report Page View 
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [])
+
+  useEffect(() => {
+   console.log(window.location.pathname)
+  })
 
   return (
     <>
