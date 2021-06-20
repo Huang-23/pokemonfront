@@ -11,7 +11,7 @@ import ReactGA from 'react-ga';
 
 function initizeAnalytics(){
   ReactGA.initialize("G-HCXMLPP4LE")
-  ReactGA.pageview('/')
+  ReactGA.pageview('/game')
 }
 
 function App() {
