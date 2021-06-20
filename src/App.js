@@ -7,16 +7,8 @@ import {Services} from './components/Services';
 import {Products} from './components/Products';
 import SignUp from './components/SignUp';
 import Game from './components/Game';
-import ReactGA from 'react-ga';
-
-function initizeAnalytics(){
-  ReactGA.initialize("G-HCXMLPP4LE")
-  ReactGA.pageview('/game')
-}
 
 function App() {
-
-  initizeAnalytics()
 
   return (
     <>
