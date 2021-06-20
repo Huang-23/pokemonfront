@@ -9,7 +9,6 @@ import SignUp from './components/SignUp';
 import Game from './components/Game';
 
 function App() {
-
   return (
     <>
       <Router>
